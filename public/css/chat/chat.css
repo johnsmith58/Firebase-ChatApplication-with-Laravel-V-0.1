@@ -172,11 +172,11 @@ img{ max-width:100%;}
   border: 2px solid gray;
   float: right;
   border-radius: 16px;
-  margin-right: 25px;
+  margin-right: 35px;
   padding: 10px 10px 10px 10px;
   position: absolute;
   right: 52px;
-  bottom: 51px;
+  bottom: -72px;
 }
 .emoji-btn{
   cursor: pointer;

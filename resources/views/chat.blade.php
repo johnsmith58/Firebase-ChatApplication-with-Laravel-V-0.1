@@ -48,17 +48,11 @@
     var html = "";
     //give message each of unique id
     html += "<li id='message-" + snapshot.key + "'>";
-        //show delete button if message sender
-        if(snapshot.val().sender == myName){
-            // html += "<button data-id='" + snapshot.key + "' onclick='deleteMessage(this);'>";
-            //     html += "Delete";
-            // html += "</button>";
-
-            html += "<a href='#' class='btn-edit' data-id='" + snapshot.key + "' onclick='deleteMessage(this);'>Edit</a>";
-
-            // <a href="#" class="btn-edit">Edit</a>
-        }
-        html += snapshot.val().sender + ": " + snapshot.val().message;
+      //show delete button if message sender
+      if(snapshot.val().sender == myName){
+          html += "<a href='#' class='btn-edit' data-id='" + snapshot.key + "' onclick='deleteMessage(this);'>Edit</a>";
+      }
+      html += snapshot.val().sender + ": " + snapshot.val().message;
     html += "</li>";
     document.getElementById("messages").innerHTML += html;
   });

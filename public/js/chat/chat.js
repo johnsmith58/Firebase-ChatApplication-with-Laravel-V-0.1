@@ -35,7 +35,6 @@ function getMessage(){
   //get message function
   firebase.database().ref("messages").on("child_added", function(snapshot){
     var html = "";
-    console.log(auth_id + "====" + snapshot.val().sender_id +"and"+ receive_id +"======="+ snapshot.val().receive_id +"and"+ receive_id +"===="+ snapshot.val().sender_id +"and"+ receive_id +"======"+ snapshot.val().receive_id);
     if(auth_id == snapshot.val().sender_id || auth_id == snapshot.val().receive_id || receive_id == snapshot.val().sender_id || receive_id == snapshot.val().receive_id){
     //start message div
     html += "<div class='outgoing_msg' id='message-" + snapshot.key + "'>";

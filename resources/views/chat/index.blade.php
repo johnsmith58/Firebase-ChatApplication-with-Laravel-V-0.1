@@ -53,7 +53,7 @@
                     </div>
                   </div>
                 </div> --}}
-                <div class="outgoing_msg">
+                {{-- <div class="outgoing_msg">
                   <div class="sent_msg">
                     <div class="message">
                       <p class="rply_message"> | Reply Message</p>
@@ -65,8 +65,8 @@
                     </div>
                     <span class="time_date"> 11:01 AM    |    June 9</span>
                   </div>
-                </div>
-                <div class="outgoing_msg">
+                </div> --}}
+                {{-- <div class="outgoing_msg">
                   <div class="receive_msg">
                     <div class="message">
                       <p>Test which is a new approach to have all
@@ -77,7 +77,7 @@
                     </div>
                     <span class="time_date"> 11:01 AM    |    June 9</span>
                   </div>
-                </div>
+                </div> --}}
               </div>
               
               <div class="emojiContainer" style="display:none">
